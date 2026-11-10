@@ -26,6 +26,8 @@ config("ecologicalrulemgrservice_config") {
 ohos_shared_library("ecologicalrulemgr_service") {
   configs = [ "${ecologicalrulemgrservice_utils_path}:utils_config" ]
 
+  branch_protector_ret = "pac_ret"
+
   public_configs = [ ":ecologicalrulemgrservice_config" ]
 
   cflags = [
