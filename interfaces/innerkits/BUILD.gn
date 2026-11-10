@@ -30,6 +30,8 @@ ohos_shared_library("erms_client") {
   ]
 
   configs = [ ":ecologicalrulemgrservice_client_config" ]
+
+  branch_protector_ret = "pac_ret"
   public_configs = [ ":ecologicalrulemgrservice_client_config" ]
   deps = []
   external_deps = [

@@ -20,6 +20,8 @@ config("utils_config") {
 ohos_source_set("ecologicalrulemgrservice_utils") {
   configs = [ ":utils_config" ]
 
+  branch_protector_ret = "pac_ret"
+
   sources = []
 
   deps = []
